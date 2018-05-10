@@ -22,6 +22,13 @@ class SQLServer(object):
         self.conn.execute_query(sql)
         for i in self.conn:
             return i
+			
+    def query_one_field(self, sql):
+        self.conn.execute_query(sql)
+        for i in self.conn:
+            for k in i:
+				return i[k]
+				
 
     def write(self, sql):
         if not ('where' in sql):

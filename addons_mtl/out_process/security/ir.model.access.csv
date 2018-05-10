@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_out_process_out_process,out_process.out_process,model_out_process_out_process,,1,0,0,0
